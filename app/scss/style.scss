@@ -152,7 +152,8 @@
     &+button {
       margin-left: 5px;
     }
-    &.mixitup-control-active{
+
+    &.mixitup-control-active {
       background-color: $red;
       color: #fff;
     }
@@ -163,7 +164,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  
+
 }
 
 .products__item {
@@ -228,7 +229,7 @@
   &-auhtor {
     display: flex;
     align-items: center;
-
+    
     .avatar {
       width: 30px;
       height: 30px;
@@ -238,12 +239,13 @@
       background-repeat: no-repeat;
       background-size: cover;
       margin-right: 14px;
-
     }
 
     span {
       font-size: 14px;
       font-weight: 500;
+      max-width: 215px;
+      
     }
   }
 
@@ -255,8 +257,8 @@
 
 .endbotton {
   text-align: center;
-  
-  
+
+
 
   button {
     margin-top: 45px;
@@ -267,19 +269,210 @@
     color: $blue;
     font-weight: 500;
     cursor: pointer;
-    
+
     &+button {
       margin-left: 10px;
     }
-    &.mixitup-control-active{
+
+    &.mixitup-control-active {
       background-color: $red;
       color: #fff;
     }
   }
 }
 
-
-
-
-
 //end products
+//start slider
+.slider {
+  padding: 100px 0 110px;
+  .slick-dots{
+    text-align: center;
+    margin-top: 50px;
+  }
+  li{
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px;
+    &.slick-active{
+      button{
+       background-color: $green;
+      }
+    }
+    
+    button{
+      border-radius: 50%;
+      color: #e8e8e8;
+      border: none;
+      font-size: 0;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+    
+  }
+}
+
+//end slider
+
+.product_1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 5485px;
+  z-index: 280;
+}
+.trending_icon {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 5485px;
+  z-index: 279;
+}
+. {
+  font-size: 18px;
+  font-family: "FontAwesome";
+  color: rgb(255, 255, 255);
+  line-height: 3.333;
+  text-align: left;
+  position: absolute;
+  left: 43.987px;
+  top: 2279.003px;
+  z-index: 278;
+}
+.Layer_220 {
+  background-image: url("Layer 220.png");
+  position: absolute;
+  left: 30px;
+  top: 2289px;
+  width: 63px;
+  height: 64px;
+  z-index: 277;
+}
+.image {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 5485px;
+  z-index: 275;
+}
+.Слой_539 {
+  background-image: url("Слой 539.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  z-index: 273;
+}
+.Rectangle_54 {
+  background-color: rgb(25, 119, 215);
+  position: absolute;
+  left: 30px;
+  top: 2289px;
+  width: 442px;
+  height: 250px;
+  z-index: 271;
+}
+.rating {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 5485px;
+  z-index: 269;
+}
+.__05_ {
+  font-size: 12px;
+  font-family: "Roboto";
+  color: rgb(176, 190, 197);
+  line-height: 5;
+  text-align: left;
+  position: absolute;
+  left: 414.219px;
+  top: 2688.734px;
+  z-index: 268;
+}
+.____ {
+  font-size: 12px;
+  font-family: "FontAwesome";
+  color: rgb(255, 167, 38);
+  line-height: 5;
+  text-align: left;
+  position: absolute;
+  left: 334.044px;
+  top: 2629px;
+  z-index: 267;
+}
+.author {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 5485px;
+  z-index: 265;
+}
+.Radiustheme {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(84, 110, 122);
+  line-height: 4.286;
+  text-align: left;
+  position: absolute;
+  left: 103.859px;
+  top: 2629.498px;
+  z-index: 264;
+}
+.text {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 5485px;
+  z-index: 261;
+}
+.Shape_54 {
+  background-color: rgb(231, 236, 242);
+  position: absolute;
+  left: 30px;
+  top: 2628px;
+  width: 442px;
+  height: 1px;
+  z-index: 260;
+}
+._19 {
+  font-size: 20px;
+  font-family: "Roboto";
+  color: rgb(38, 50, 56);
+  font-weight: bold;
+  line-height: 3;
+  text-align: left;
+  position: absolute;
+  left: 406.344px;
+  top: 2614.969px;
+  z-index: 259;
+}
+.Site_Template {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(139, 195, 74);
+  line-height: 4.286;
+  text-align: left;
+  position: absolute;
+  left: 62.734px;
+  top: 2633.021px;
+  z-index: 258;
+}
+.Responsive_Template {
+  font-size: 18px;
+  font-family: "Roboto";
+  color: rgb(38, 50, 56);
+  line-height: 3.333;
+  text-align: left;
+  position: absolute;
+  left: 60.812px;
+  top: 2605.605px;
+  z-index: 257;
+}
