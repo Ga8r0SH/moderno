@@ -53,7 +53,7 @@
   a {
     color: #fff;
     font-size: 14px;
-    font-weight: 500;
+    @include f500;
   }
 }
 
@@ -80,7 +80,7 @@
   &-title {
 
     font-size: 48px;
-    font-weight: 700;
+    @include f700;
     margin-bottom: 20px;
     line-height: 75px;
 
@@ -88,7 +88,7 @@
 
   &-text {
     font-size: 20px;
-    font-weight: 500;
+    @include f500;
     margin-bottom: 50px;
     line-height: 30px;
   }
@@ -107,7 +107,7 @@
       height: 56px;
       border: none;
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
 
       &::placeholder {
         color: #90a4ae;
@@ -146,7 +146,7 @@
     background-color: #fff;
     color: $blue;
     font-size: 14px;
-    font-weight: 500;
+    @include f500;
     cursor: pointer;
 
     &+button {
@@ -198,7 +198,7 @@
     display: block;
     font-size: 18px;
     color: $blue;
-    font-weight: 500;
+    @include f500;
     padding-bottom: 5px;
   }
 
@@ -206,14 +206,14 @@
     display: block;
     color: $green;
     font-size: 14px;
-    font-weight: 500;
+    @include f500;
 
   }
 
   &-price {
     font-size: 20px;
     color: $blue;
-    font-weight: 700;
+    @include f700;
   }
 
   &-reviews {
@@ -229,7 +229,7 @@
   &-auhtor {
     display: flex;
     align-items: center;
-    
+
     .avatar {
       width: 30px;
       height: 30px;
@@ -243,9 +243,9 @@
 
     span {
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
       max-width: 215px;
-      
+
     }
   }
 
@@ -267,7 +267,7 @@
     background-color: #fff;
     box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
     color: $blue;
-    font-weight: 500;
+    @include f500;
     cursor: pointer;
 
     &+button {
@@ -285,21 +285,24 @@
 //start slider
 .slider {
   padding: 100px 0 110px;
-  .slick-dots{
+
+  .slick-dots {
     text-align: center;
     margin-top: 50px;
   }
-  li{
+
+  li {
     display: inline-block;
     margin-left: 3px;
     margin-right: 3px;
-    &.slick-active{
-      button{
-       background-color: $green;
+
+    &.slick-active {
+      button {
+        background-color: $green;
       }
     }
-    
-    button{
+
+    button {
       border-radius: 50%;
       color: #e8e8e8;
       border: none;
@@ -308,171 +311,46 @@
       height: 16px;
       cursor: pointer;
     }
-    
+
   }
 }
 
 //end slider
+//start advantages
+.advantages {
+  background-color: $blue;
+  padding: 100px 0 110px;
+}
 
-.product_1 {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1920px;
-  height: 5485px;
-  z-index: 280;
+.advantages__inner {
+  display: flex;
+  justify-content: space-between;
 }
-.trending_icon {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1920px;
-  height: 5485px;
-  z-index: 279;
+.advantages__item{
+  max-width: 370px;
+  text-align: center;
+  padding: 0 15px;
+  &-title {
+    font-size: 24px;
+    @include f500;
+    color: #fff;
+    span{
+      color: $green;
+    }
+  }
+
+  &-text {
+    font-size: 15px;
+    color: #b0bec5;
+    padding-top: 25px;
+  }
 }
-. {
-  font-size: 18px;
-  font-family: "FontAwesome";
-  color: rgb(255, 255, 255);
-  line-height: 3.333;
-  text-align: left;
-  position: absolute;
-  left: 43.987px;
-  top: 2279.003px;
-  z-index: 278;
+
+.advantages__title {
+  color: #fff;
+  padding-bottom: 40px;
 }
-.Layer_220 {
-  background-image: url("Layer 220.png");
-  position: absolute;
-  left: 30px;
-  top: 2289px;
-  width: 63px;
-  height: 64px;
-  z-index: 277;
-}
-.image {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1920px;
-  height: 5485px;
-  z-index: 275;
-}
-.Слой_539 {
-  background-image: url("Слой 539.png");
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 0px;
-  height: 0px;
-  z-index: 273;
-}
-.Rectangle_54 {
-  background-color: rgb(25, 119, 215);
-  position: absolute;
-  left: 30px;
-  top: 2289px;
-  width: 442px;
-  height: 250px;
-  z-index: 271;
-}
-.rating {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1920px;
-  height: 5485px;
-  z-index: 269;
-}
-.__05_ {
-  font-size: 12px;
-  font-family: "Roboto";
-  color: rgb(176, 190, 197);
-  line-height: 5;
-  text-align: left;
-  position: absolute;
-  left: 414.219px;
-  top: 2688.734px;
-  z-index: 268;
-}
-.____ {
-  font-size: 12px;
-  font-family: "FontAwesome";
-  color: rgb(255, 167, 38);
-  line-height: 5;
-  text-align: left;
-  position: absolute;
-  left: 334.044px;
-  top: 2629px;
-  z-index: 267;
-}
-.author {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1920px;
-  height: 5485px;
-  z-index: 265;
-}
-.Radiustheme {
-  font-size: 14px;
-  font-family: "Roboto";
-  color: rgb(84, 110, 122);
-  line-height: 4.286;
-  text-align: left;
-  position: absolute;
-  left: 103.859px;
-  top: 2629.498px;
-  z-index: 264;
-}
-.text {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1920px;
-  height: 5485px;
-  z-index: 261;
-}
-.Shape_54 {
-  background-color: rgb(231, 236, 242);
-  position: absolute;
-  left: 30px;
-  top: 2628px;
-  width: 442px;
-  height: 1px;
-  z-index: 260;
-}
-._19 {
-  font-size: 20px;
-  font-family: "Roboto";
-  color: rgb(38, 50, 56);
-  font-weight: bold;
-  line-height: 3;
-  text-align: left;
-  position: absolute;
-  left: 406.344px;
-  top: 2614.969px;
-  z-index: 259;
-}
-.Site_Template {
-  font-size: 14px;
-  font-family: "Roboto";
-  color: rgb(139, 195, 74);
-  line-height: 4.286;
-  text-align: left;
-  position: absolute;
-  left: 62.734px;
-  top: 2633.021px;
-  z-index: 258;
-}
-.Responsive_Template {
-  font-size: 18px;
-  font-family: "Roboto";
-  color: rgb(38, 50, 56);
-  line-height: 3.333;
-  text-align: left;
-  position: absolute;
-  left: 60.812px;
-  top: 2605.605px;
-  z-index: 257;
-}
+
+
+//start advantages
+
