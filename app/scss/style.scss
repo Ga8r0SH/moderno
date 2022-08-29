@@ -350,7 +350,47 @@
   color: #fff;
   padding-bottom: 40px;
 }
+//end advantages
+//start author
+.author{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__inner{
+  background-color:$green;
+  display: flex;
+  justify-content: center;
+  max-width: 650px;
+  min-height: 215px;
+  align-items: center; 
+  width: 100%; 
+}
+}
+.author__text{
+  font-size: 30px;
+  line-height: 36px;
+  margin-right: 45px;
+  max-width: 260px;
+  color: #fff;
+  span{
+    @include f700;
+  }
+}
+.author__button{
+  font-size: 18px;
+  color: $blue;
+  line-height: 36px;
+  padding: 14px 43px;
+  background-color: #fff
+}
 
 
-//start advantages
+
+
+
+//end author
 
