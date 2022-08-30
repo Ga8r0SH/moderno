@@ -326,15 +326,18 @@
   display: flex;
   justify-content: space-between;
 }
-.advantages__item{
+
+.advantages__item {
   max-width: 370px;
   text-align: center;
   padding: 0 15px;
+
   &-title {
     font-size: 24px;
     @include f500;
     color: #fff;
-    span{
+
+    span {
       color: $green;
     }
   }
@@ -350,9 +353,10 @@
   color: #fff;
   padding-bottom: 40px;
 }
+
 //end advantages
 //start author
-.author{
+.author {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -360,27 +364,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  &__inner{
-  background-color:$green;
-  display: flex;
-  justify-content: center;
-  max-width: 650px;
-  min-height: 215px;
-  align-items: center; 
-  width: 100%; 
+
+  &__inner {
+    background-color: $green;
+    display: flex;
+    justify-content: center;
+    max-width: 650px;
+    min-height: 215px;
+    align-items: center;
+    width: 100%;
+  }
 }
-}
-.author__text{
+
+.author__text {
   font-size: 30px;
   line-height: 36px;
   margin-right: 45px;
   max-width: 260px;
   color: #fff;
-  span{
+
+  span {
     @include f700;
   }
 }
-.author__button{
+
+.author__button {
   font-size: 18px;
   color: $blue;
   line-height: 36px;
@@ -388,9 +396,217 @@
   background-color: #fff
 }
 
-
-
-
-
 //end author
+//start tutorial 
+.tutorial {
+  padding: 60px 0px 110px;
 
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+.title-item {
+  max-width: 370px;
+  width: 100%;
+}
+
+.tutorial__img {
+  min-height: 270px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url();
+}
+
+.tutorial__text {
+  text-align: center;
+  font-size: 24px;
+  padding: 30px 10px;
+  @include f700;
+  color: $blue;
+  background-color: #f8f8f8;
+}
+
+//end tutorial 
+//start footer
+.footer {
+  background-color: $blue;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 80px;
+  }
+}
+
+.footer__col {
+  max-width: 270px;
+  width: 100%;
+
+  &-menu {
+    max-width: 220px;
+  }
+
+  &-title {
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Raleway';
+    font-weight: 700;
+    padding-bottom: 29px;
+    margin-bottom: 30px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 2px;
+      width: 51px;
+      height: 3px;
+      background-color: $green;
+    }
+
+  }
+
+  &-text {
+    color: #b7c3c8;
+    margin-bottom: 30px;
+  }
+}
+
+.footer__info {
+  margin-bottom: 18px;
+  color: #fff;
+  @include f500;
+  padding-left: 30px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '\f041';
+    font-family: 'icomoon';
+    color: $green;
+    font-size: 18px;
+    left: 0;
+
+  }
+
+  &-phone {
+    &::before {
+      content: '\f095';
+    }
+  }
+}
+
+.color__col-list a {
+  color: #b7c3c8;
+  margin-bottom: 15px;
+  padding-left: 22px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '\f105';
+    font-family: 'icomoon';
+    color: $green;
+    font-size: 18px;
+    left: 0;
+  }
+}
+
+.footer__copy {
+  border-top: 1px solid #424d53;
+
+  &-text {
+    text-align: center;
+    font-size: 15px;
+    color: #919699;
+    padding: 25px 0 25px;
+  }
+}
+
+.footer__social-link {
+  margin-bottom: 35px;
+
+  li {
+    display: inline-block;
+
+    &+li {
+      margin-left: 7px;
+    }
+  }
+
+  a {
+    width: 28px;
+    height: 28px;
+    background-image: url(/images/icon/css_sprites.png);
+  }
+}
+
+.link-twitter {
+  background-position: -28px -0;
+}
+
+.link-youtube {
+  background-position: -0 -28px;
+}
+
+.link-pinterest {
+  background-position: -28px -28;
+}
+
+.link-linledin {
+  background-position: -56px -0;
+}
+
+.footer__form {
+  position: relative;
+  &-title {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  input {
+    background-color: #2f3c43;
+    display: block;
+    width: 100%;
+    border: none;
+    height: 40px;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 50px;
+
+    &::placeholder {
+      color: #697378;
+
+    }
+  }
+  button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $green;
+    width: 43px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    &::before{
+      content: '\f124';
+      position: absolute;
+      font-family: 'icomoon';
+      color: #fff;
+      font-size: 20px;
+      right: 13px;
+      top: 11px;
+    }
+  }
+}
+
+
+
+//end footer
