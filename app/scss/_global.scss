@@ -7,6 +7,10 @@ html {
  *::after {
   box-sizing: inherit;
 }
+html,
+body {
+  height: 100%;
+}
 a{
   display: inline-block;
   text-decoration: none;
@@ -18,6 +22,7 @@ li{
   padding: 0;
   list-style: none;
 }
+
 body{
   font-family: 'Roboto',sans-serif;
   font-weight: 400;
@@ -25,6 +30,22 @@ body{
   line-height: 24px;
   color: $text;
 }
+//для приклейвания футера к низу
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.page-content{
+  background-color: $grey;
+}
+.footer {
+  flex: 0 0 auto;
+}
+//для приклейвания футера к низу
 .container{
   max-width: 1200px;
   margin: 0 auto;
@@ -51,4 +72,33 @@ body{
 .rate-star{
   display: inline-block;
   padding-right: 10px;
+}
+.breadcrumps{
+  &__inner{
+    padding: 45px 0 40px;
+  }
+  li{
+    
+    display: inline-block;
+    position: relative;
+    & + li{
+      padding-left: 23px;
+    
+    &::before{
+      content: '-';
+      position: absolute;
+      left: 9px;
+      color: $green;
+    }
+    &:last-child{
+      a,span{
+      color: $blue;
+      }
+    }
+    }
+    a{
+      color: #b0bec5;
+    }
+  }
+
 }
